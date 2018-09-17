@@ -1,0 +1,55 @@
+<div class="card-information-container offset-sm-3">
+  <div class="row" *ngIf="cardInformation !== undefined; else selectCard">
+	  <div class="card-image col-sm-3">
+	  	<img [src]="'http://52.57.88.137/api/card_image/'+ cardInformation.name">
+	  </div>
+	  <div class="card-information col-sm-6">
+	  	<table class="table table-bordered">
+	  		<tbody>
+	        <tr>
+	          <th>Name</th>
+	          <td *ngIf="cardInformation.name !== null; else dashCell">{{ cardInformation.name }}</td>           
+	        </tr>
+	        <tr>
+	          <th>Type</th>  
+	          <td *ngIf="cardInformation.type !== null; else dashCell">{{ cardInformation.type }}</td>        
+	        </tr>
+	        <tr>
+	          <th>Card Type</th>
+	          <td *ngIf="cardInformation.card_type !== null; else dashCell">{{ cardInformation.card_type }}</td>
+	        </tr>
+	        <tr>
+	          <th>Family</th>  
+	          <td *ngIf="cardInformation.family !== null; else dashCell">{{ cardInformation.family }}</td>          
+	        </tr>
+	        <tr>
+	          <th>Level</th>
+	          <td *ngIf="cardInformation.level !== null; else dashCell">{{ cardInformation.level }}</td>          
+	        </tr>
+	        <tr>
+	          <th>Property</th>    
+	          <td *ngIf="cardInformation.property !== null; else dashCell">{{ cardInformation.property }}</td>      
+	        </tr>
+	        <tr>
+	          <th>Attack</th>  
+	          <td *ngIf="cardInformation.atk !== null; else dashCell">{{ cardInformation.atk }}</td>        
+	        </tr>
+	        <tr>
+	          <th>Defence</th>  
+	          <td *ngIf="cardInformation.def !== null; else dashCell">{{ cardInformation.def }}</td>        
+	        </tr>
+	        <tr>
+	          <th>Description</th>
+	          <td *ngIf="cardInformation.text !== null; else dashCell">{{ cardInformation.text }}</td>                   
+	        </tr>
+	    </tbody>
+	  	</table>
+	  </div>
+  </div>
+  <ng-template #selectCard>
+  	<h4 class="alternate-text">Select a card from the side list, to see card details.</h4>
+  </ng-template>
+  <ng-template #dashCell>
+  	<td> - </td>
+  </ng-template>  
+</div>

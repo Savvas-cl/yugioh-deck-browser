@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Sidebar */
+.sidebar-container {
+	height: 100vh !important; /* needed to render properly */
+}
+	.sidebar-container aside {
+		border-right: 1px solid #aaa;		
+	}
+		.sidebar-container aside h4 {
+			text-align: center; 
+		}
