@@ -25,7 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Development process
 
 First of all initialize a new project and create the folder structure. 
-In my case I used the angular 6 javascript framework so it was fairly easy to initialize a new project,
+In my case I used the angular 6 javascript framework so it was fairly easy to initialize a new project
 with the help of the angular-cli. A git repository was also initialized automatically.
 Then I installed any other modules that I may need in my project. In my case ng-sidebar, bootstrap and
 ng-bootstrap. I used npm for this. 

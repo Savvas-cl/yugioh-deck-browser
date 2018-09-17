@@ -1,13 +1,14 @@
-ul {
+	ul {
 	list-style: none;
 	padding-left: 0;
 }
 	ul li {
-		padding-right: 25px;
+		padding-right: 10px;
 		padding-left: 20px;
     	border-top: 1px solid #aaa;    	
-    	line-height: 50px;
+    	line-height: 56px;
     	cursor: pointer;
+    	font-size: 14px;
 	}
 	ul li:nth-child(even) {
 		background-color: #eee;
@@ -18,3 +19,15 @@ ul {
 	ul li:hover {
 		background-color: #ccc;
 	}
+		ul li .card-type { 
+			position: relative;
+   			 font-size: 12px;
+    		display: inline-block;
+    		top: 33px;
+    		float: right;
+    		right: -6px;
+    		border: 1px solid #aaa;
+    		line-height: 15px;
+    		padding-left: 1px;
+    		padding: 1px;
+		} 

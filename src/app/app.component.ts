@@ -52,12 +52,12 @@ export class AppComponent {
   createDeck(cardNames: string[], deck: Card[]) {
   	for(let cardName of cardNames) {
       this.cardService.getCardDetailsByName(cardName).subscribe((data: any) => {
-  	  	deck.push(new Card(data.data)); 	  	  	
+  	  	deck.push(new Card(data.data));   	  		  
   	  });  	
     }
   }
    
   clickedCard(card: Card) {
-  	this.currentCard = card;  
+  	this.currentCard = card;  	
   }
 }
